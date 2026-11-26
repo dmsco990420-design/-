@@ -1,5 +1,9 @@
 {
   "app_name": "Glass Bubble 206",
   "app_name_ko": "유리알 말풍선 206",
-  "application_id": "com.bitnalhee.theme.glassbubble206"
+  "application_id": "com.bitnalhee.theme.glassbubble206",
+  "colors": {
+    "theme_chatroom_input_bar_menu_button_color": "#0D000000",
+    "theme_chatroom_input_bar_menu_icon_color": "#FF555555"
+  }
 }
