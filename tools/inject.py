@@ -75,4 +75,9 @@ if os.path.isdir(AND):
             g=os.path.join(REPO,"build.gradle.kts"); t=open(g,encoding="utf-8").read()
             t=re.sub(r'applicationId\s*=\s*"[^"]*"', f'applicationId = "{app["application_id"]}"', t)
             open(g,"w",encoding="utf-8").write(t)
+        if app.get("colors"):
+            cp=os.path.join(REPO,"src/main/theme/values/colors.xml"); t=open(cp,encoding="utf-8").read()
+            for nm,val in app["colors"].items():
+                t=re.sub(r'(<color name="'+nm+r'">)[^<]*(</color>)', r'\g<1>'+val+r'\g<2>', t)
+            open(cp,"w",encoding="utf-8").write(t); print("■ 색상 덮어씀:", ", ".join(app["colors"]))
         print("■ 앱 이름:", app.get("app_name_ko"), "/ 앱 ID:", app.get("application_id"))
