@@ -170,9 +170,9 @@ MessageCellStyle-Send
     -ios-title-edgeinsets: 11px 13px 11.5px 19px;  /* top, left, bottom, right */
     -ios-group-title-edgeinsets: 11px 13px 11.5px 19px;
 
-    -ios-text-color: #525252;
-    -ios-selected-text-color: #525252;
-    -ios-unread-text-color: #525252;
+    -ios-text-color: #333333;
+    -ios-selected-text-color: #333333;
+    -ios-unread-text-color: #333333;
 }
 
 MessageCellStyle-Receive
@@ -184,9 +184,9 @@ MessageCellStyle-Receive
     -ios-title-edgeinsets: 10.5px 19px 12px 13px;  /* top, left, bottom, right */
     -ios-group-title-edgeinsets: 10.5px 19px 12px 13px;
 
-    -ios-text-color: #525252;
-    -ios-selected-text-color: #525252;
-    -ios-unread-text-color: #525252;
+    -ios-text-color: #333333;
+    -ios-selected-text-color: #333333;
+    -ios-unread-text-color: #333333;
 }
 
 
